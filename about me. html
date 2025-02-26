@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>About Me | Leonardo Mario Ginting</title>
+</head>
+<body>
+	<h1>About Me</h1>
+	<p>halaman ini berisi tentang saya</p>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <!-- td = tabel data -->
+            <td><b>Nama</b></td>
+            <td>Leonardo Mario Ginting</td>
+        </tr>
+        <tr>
+            <td><b>NIM</b></td>
+            <td>220709093</td>
+        </tr>
+        <tr>
+            <td><b>Program Studi</b></td>
+            <td>Perpustakaan dan Sains Informasi</td>
+        </tr>
+        <tr>
+            <td><b>Fakultas</b></td>
+            <td>Ilmu Budaya</td>
+        </tr>
+        <tr>
+            <td><b>Universitas</b></td>
+            <td>Universitas Sumatera Utara</td>
+        </tr>
+    </table>
+        
+    <h4>Halaman lain</h4>
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="about me.html">Contact</a>
+        </li>
+    </ul>
+</body>
+</html>
