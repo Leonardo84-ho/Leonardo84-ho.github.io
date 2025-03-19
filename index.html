@@ -2,15 +2,17 @@
 <html lang="id">
 <head>
     <style>
-    .parallax {
-    background-image: url('path/to/your-image.jpg');
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    body {
+        background: linear-gradient(45deg, #f22613, #26a65b, #5868ec);
+        background-size: 400% 400%;
+        animation: gradientAnimation 10s ease infinite;
+    }
 
+    @keyframes gradientAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
     body {
   background-color: LightGreen; /* Mengatur Warna Latar Belakang  */
 }
