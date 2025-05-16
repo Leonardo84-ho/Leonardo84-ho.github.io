@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Event - Perpus Digital Leonardo</title>
+    <!-- Font Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --blue: #2563eb;
+            --blue-dark: #1e40af;
+            --blue-light: #e0e7ff;
+            --white: #fff;
+            --gray: #f5f7fa;
+            --shadow: 0 6px 32px rgba(37,99,235,0.13);
+        }
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: var(--gray);
+            margin: 0;
+            color: var(--blue-dark);
+            min-height: 100vh;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--white);
+            padding: 1.2rem 2.5rem;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            color: var(--blue-dark);
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+            gap: 0.6rem;
+        }
+        .navbar .logo i {
+            font-size: 2rem;
+            color: var(--blue);
+        }
+        .navbar nav a {
+            color: var(--blue-dark);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            font-size: 1.1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-radius: 6px;
+            padding: 0.2rem 0.8rem;
+            transition: background 0.2s, color 0.2s;
+        }
+        .navbar nav a:hover {
+            background: var(--blue-light);
+            color: var(--blue);
+        }
+        .event-section {
+            max-width: 900px;
+            margin: 60px auto 0 auto;
+            padding: 0 20px;
+        }
+        .event-title {
+            text-align: center;
+            color: var(--blue-dark);
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 38px;
+            letter-spacing: 0.5px;
+        }
+        .event-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+            justify-content: center;
+        }
+        .event-card {
+            background: var(--white);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(31,38,135,0.12);
+            padding: 28px 24px 22px 24px;
+            width: 340px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.18s, box-shadow 0.2s;
+        }
+        .event-card:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 12px 40px 0 rgba(37,99,235,0.17);
+        }
+        .event-card h3 {
+            color: var(--blue-dark);
+            font-size: 1.18em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .event-card p {
+            color: #333;
+            font-size: 1em;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .event-card .event-date {
+            font-size: 0.98em;
+            color: var(--blue);
+            margin-bottom: 14px;
+        }
+        .event-card .event-social {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+        }
+        .event-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #e1306c;
+            color: var(--white);
+            border-radius: 50%;
+            width: 42px;
+            height: 42px;
+            font-size: 1.35em;
+            transition: background 0.2s, transform 0.15s;
+            box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+        }
+        .event-social a.whatsapp {
+            background: #25d366;
+        }
+        .event-social a.whatsapp:hover {
+            background: #128c7e;
+        }
+        .event-social a:hover:not(.whatsapp) {
+            background: #c13584;
+            transform: scale(1.13);
+        }
+        @media (max-width: 900px) {
+            .event-list { flex-direction: column; align-items: center; }
+            .event-card { width: 98%; }
+        }
+        @media (max-width: 600px) {
+            .navbar { flex-direction: column; align-items: flex-start; padding: 1rem;}
+            .navbar nav { margin-top: 0.7rem;}
+            .event-section { margin: 20px 0 0 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-book-bookmark"></i>
+            Perpus Digital Leonardo
+        </div>
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="about%20me.html"><i class="fa-solid fa-user"></i> About me</a>
+            <a href="Contact%20Us.html"><i class="fa-solid fa-envelope"></i> Contact us</a>
+        </nav>
+    </div>
+    <div class="event-section">
+        <div class="event-title">Event Terbaru</div>
+        <div class="event-list">
+            <!-- Event 1 -->
+            <div class="event-card">
+                <h3>Lomba CODM</h3>
+                <div class="event-date"><i class="fa-solid fa-calendar-days"></i> 25 Mei 2025</div>
+                <p>
+                    Ikuti Lomba Call of Duty Mobile (CODM) tingkat nasional! Raih hadiah jutaan rupiah dan pengalaman seru bersama tim terbaik.
+                </p>
+                <div class="event-social">
+                    <a href="https://www.instagram.com/p/DJRIvb-plN3/?igsh=bnVpYnY2OXI2Zm5x" target="_blank" title="Lihat di Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Event 2 -->
+            <div class="event-card">
+                <h3>Lomba Berbagai Games</h3>
+                <div class="event-date"><i class="fa-solid fa-calendar-days"></i> 2 Juni 2025</div>
+                <p>
+                    Ayo tunjukkan skill gaming-mu di berbagai kompetisi seru! Daftarkan tim kamu sekarang dan dapatkan hadiahnya!
+                </p>
+                <div class="event-social">
+                    <a href="https://www.instagram.com/p/CtVFJBcBTdI/?igsh=cG5uZ25pOTQxMGVw" target="_blank" title="Info di Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
