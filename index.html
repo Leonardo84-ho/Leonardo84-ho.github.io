@@ -108,6 +108,9 @@
         color: #eaf2ff;
         opacity: 0.97;
     }
+    .hero-content a {
+        text-decoration: none !important; /* Hilangkan underline pada link di hero */
+    }
     .hero-buttons {
         display: flex;
         justify-content: center;
@@ -137,7 +140,11 @@
     .hero-buttons a i {
         font-size: 1.08rem;
     }
-    /* Buku Section */
+    /* Hilangkan lingkaran jika ada */
+    .hero-buttons .dot {
+        display: none !important;
+    }
+    /* --- Section Buku (jika ada) --- */
     .book-section {
         max-width: 950px;
         margin: 60px auto 0 auto;
@@ -267,7 +274,7 @@
         <nav>
             <a href="about%20me.html"><i class="fa-solid fa-user"></i>About me</a>
             <a href="contact%20us.html"><i class="fa-solid fa-envelope"></i>Contact Us</a>
-            <a href="tabel.html"><i class="fa-solid fa-envelope"></i>Tabel Perkalian/a>
+            <a href="tabel.html"><i class="fa-solid fa-table"></i>Tabel Perkalian</a>
         </nav>
     </header>
     <!-- Hero Section -->
