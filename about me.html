@@ -3,76 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --blue: #2563eb;
-            --blue-light: #e0e7ff;
-            --blue-dark: #1e40af;
-            --white: #fff;
-            --gray: #f5f7fa;
-            --shadow: 0 6px 32px rgba(37,99,235,0.13);
-        }
         body {
             margin: 0;
             padding: 0;
             font-family: 'Poppins', Arial, sans-serif;
-            background: var(--gray);
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+            background-size: cover;
             min-height: 100vh;
-            color: var(--blue-dark);
+            color: #222;
         }
         .navbar {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background: var(--white);
-            padding: 1.2rem 2.5rem;
-            box-shadow: var(--shadow);
-            position: sticky;
-            top: 0;
-            z-index: 20;
+            padding: 0 40px;
+            height: 70px;
         }
         .navbar .logo {
+            font-weight: 700;
+            font-size: 1.4em;
+            color: #1976d2;
+            letter-spacing: 1px;
             display: flex;
             align-items: center;
-            font-weight: 700;
-            color: var(--blue-dark);
-            font-size: 1.6rem;
-            letter-spacing: 1px;
-            gap: 0.6rem;
         }
         .navbar .logo i {
-            font-size: 2rem;
-            color: var(--blue);
+            margin-right: 8px;
+            font-size: 1.5em;
         }
         .navbar nav a {
-            color: var(--blue-dark);
+            color: #1976d2;
             text-decoration: none;
-            margin-left: 2rem;
+            margin-left: 32px;
             font-weight: 500;
-            font-size: 1.1rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            border-radius: 6px;
-            padding: 0.2rem 0.8rem;
-            transition: background 0.2s, color 0.2s;
+            font-size: 1.1em;
+            transition: color 0.2s;
         }
         .navbar nav a:hover {
-            background: var(--blue-light);
-            color: var(--blue);
+            color: #0d47a1;
         }
         .container {
             max-width: 600px;
             margin: 60px auto 0 auto;
-            background: rgba(255,255,255,0.95);
+            background: rgba(255,255,255,0.92);
             border-radius: 18px;
-            box-shadow: 0 8px 32px 0 rgba(31,38,135,0.12);
+            box-shadow: 0 8px 32px 0 rgba(31,38,135,0.15);
             padding: 40px 32px;
         }
         h1 {
             text-align: center;
-            font-size: 2.1em;
+            font-size: 2.2em;
             font-weight: 700;
             margin-bottom: 28px;
+            color: #1a237e;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 24px;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px 14px;
+            font-size: 1.05em;
+        }
+        th {
+            background: #1976d2;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 6px 0 0 6px;
+            width: 140px;
+        }
+        tr {
+            background: #f4f7fa;
+            border-radius: 0 6px 6px 0;
+        }
+        tr:not(:last-child) td, tr:not(:last-child) th {
+            border-bottom: 1px solid #e0e0e0;
+        }
+        a {
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            margin-top: 32px;
+            font-size: 1.15em;
+            color: #1a237e;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        @media (max-width: 700px) {
+            .container { padding: 24px 8px; }
+            .navbar { flex-direction: column; height: auto; padding: 0 10px; }
+            .navbar nav a { margin-left: 16px; font-size: 1em; }
+        }
+    </style>
+    <!-- Icon CDN (optional, for logo) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <i class="fas fa-book"></i>
+            Perpus Digital Leonardo
+        </div>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="about%20me.html"><i class="fas fa-user"></i> About me</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact us</a>
+        </nav>
+    </div>
+    <div class="container">
+        <h1>About Me</h1>
+        <p>Halaman ini berisi tentang identitas saya:</p>
+        <table>
+            <tr>
+                <th>Nama</th>
+                <td>Leonardo Mario Ginting</td>
+            </tr>
+            <tr>
+                <th>NIM</th>
+                <td>220709093</td>
+            </tr>
+            <tr>
+                <th>Program Studi</th>
+                <td>Perpustakaan dan Sains Informasi</td>
+            </tr>
+            <tr>
+                <th>Fakultas</th>
+                <td>Ilmu Budaya</td>
+            </tr>
+            <tr>
+                <th>Universitas</th>
+                <td>Universitas Sumatera Utara</td>
+            </tr>
+        </table>
+        <p>
+            <a href="https://www.linkedin.com/in/username" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </p>
+        <h2>Halaman Lain</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</body>
+</html>
